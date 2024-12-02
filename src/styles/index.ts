@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 const EstiloGlobal = createGlobalStyle`
   *{
     margin:0;
@@ -6,6 +6,10 @@ const EstiloGlobal = createGlobalStyle`
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
+`
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: 224px auto;
 `
 
 export default EstiloGlobal
